@@ -8,3 +8,9 @@
     --accent: #ff3d7f;
     --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
 }
+
+a:focus, button:focus, .cta-button:focus, .card-button:focus, .hamburger:focus, input:focus {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--secondary);
+}
