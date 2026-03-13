@@ -1,0 +1,10 @@
+/* Basic Styles */
+:root {
+    --primary: #6a00f4;
+    --primary-dark: #4a00b0;
+    --secondary: #00f4d9;
+    --dark: #0a0a1a;
+    --light: #f0f0ff;
+    --accent: #ff3d7f;
+    --gradient: linear-gradient(135deg, var(--primary), var(--secondary));
+}
