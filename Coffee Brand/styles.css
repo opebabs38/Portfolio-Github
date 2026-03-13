@@ -32,3 +32,22 @@ img, .hero-image, .futuristic-cup, .features, .testimonials, .pricing-table, .te
     max-width: 100%;
     box-sizing: border-box;
 }
+
+body {
+    background-color: var(--dark);
+    color: var(--light);
+    line-height: 1.6;
+    overflow-x: hidden;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
