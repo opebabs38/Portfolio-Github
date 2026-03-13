@@ -21,3 +21,9 @@ a:focus, button:focus, .cta-button:focus, .card-button:focus, .hamburger:focus, 
     box-sizing: border-box;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+html, body {
+    width: 100%;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
