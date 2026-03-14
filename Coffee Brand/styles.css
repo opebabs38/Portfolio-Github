@@ -307,3 +307,149 @@ nav {
     left: 80%;
     animation-duration: 14s;
 }
+
+/* Features & Pricing Section */
+.features {
+    padding: 6rem 0;
+    background: rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.features::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--secondary), transparent);
+}
+
+.features h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 4rem;
+    background: linear-gradient(to right, var(--secondary), var(--primary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.pricing-table {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.pricing-card {
+    flex: 1;
+    min-width: 280px;
+    max-width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 15px;
+    padding: 2rem;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(106, 0, 244, 0.2);
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(106, 0, 244, 0.1) 0%, rgba(10, 10, 26, 0) 70%);
+    z-index: -1;
+}
+
+.card-header {
+    margin-bottom: 2rem;
+    text-align: center;
+    position: relative;
+}
+
+.card-header h3 {
+    font-size: 1.8rem;
+    color: var(--secondary);
+    margin-bottom: 0.5rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--light);
+}
+
+.price span {
+    font-size: 1rem;
+    opacity: 0.7;
+}
+
+.card-features {
+    list-style: none;
+    margin-bottom: 2rem;
+}
+
+.card-features li {
+    padding: 0.8rem 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.card-features li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--secondary);
+}
+
+.card-button {
+    width: 100%;
+    padding: 1rem;
+    background: var(--gradient);
+    color: var(--dark);
+    font-weight: 700;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(106, 0, 244, 0.3);
+}
+
+.featured {
+    border: 1px solid var(--secondary);
+    transform: scale(1.05);
+}
+
+.featured .card-button {
+    background: var(--accent);
+    background: linear-gradient(to right, var(--accent), #ff6b9c);
+}
+
+.card-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: var(--accent);
+    color: var(--dark);
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 0.8rem;
+    transform: rotate(5deg);
+}
