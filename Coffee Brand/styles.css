@@ -144,3 +144,166 @@ nav {
     margin: 5px 0;
     transition: all 0.3s;
 }
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 8rem 0 4rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(106, 0, 244, 0.1) 0%, rgba(10, 10, 26, 0) 70%);
+    z-index: -1;
+}
+
+.hero-content {
+    flex: 1;
+    padding-right: 2rem;
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+    background: linear-gradient(to right, var(--light), var(--secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    max-width: 600px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: var(--gradient);
+    color: var(--dark);
+    font-weight: 700;
+    border-radius: 50px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border: none;
+    cursor: pointer;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(106, 0, 244, 0.3);
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.futuristic-cup {
+    width: 300px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 50% 50% 10% 10%;
+    position: relative;
+    box-shadow: 0 0 50px rgba(106, 0, 244, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    overflow: hidden;
+}
+
+.futuristic-cup::before {
+    content: '';
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    right: 10%;
+    bottom: 20%;
+    background: linear-gradient(45deg, transparent, rgba(0, 244, 217, 0.2), transparent);
+    transform: rotate(45deg);
+    animation: shine 3s infinite;
+}
+
+.futuristic-cup::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 30%;
+    background: rgba(0, 244, 217, 0.1);
+    border-radius: 0 0 10% 10%;
+}
+
+.particles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.particle {
+    position: absolute;
+    background: var(--secondary);
+    border-radius: 50%;
+    opacity: 0.6;
+    animation: float 10s infinite linear;
+}
+
+.particle:nth-child(1) {
+    width: 5px;
+    height: 5px;
+    top: 20%;
+    left: 30%;
+    animation-duration: 15s;
+}
+
+.particle:nth-child(2) {
+    width: 8px;
+    height: 8px;
+    top: 60%;
+    left: 70%;
+    animation-duration: 20s;
+}
+
+.particle:nth-child(3) {
+    width: 3px;
+    height: 3px;
+    top: 40%;
+    left: 50%;
+    animation-duration: 12s;
+}
+
+.particle:nth-child(4) {
+    width: 6px;
+    height: 6px;
+    top: 80%;
+    left: 20%;
+    animation-duration: 18s;
+}
+
+.particle:nth-child(5) {
+    width: 4px;
+    height: 4px;
+    top: 30%;
+    left: 80%;
+    animation-duration: 14s;
+}
