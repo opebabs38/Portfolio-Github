@@ -360,3 +360,65 @@ a {
 .social-links a:hover {
     color: var(--primary-color);
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background: white;
+        padding: 20px 0;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .skills {
+        width: 100%;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    section {
+        padding: 60px 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 30px 20px;
+    }
+}
