@@ -8,3 +8,15 @@
     --text-color: #333;
     --text-light: #fff;
 }
+
+/* Focus Styles for accessibility */
+a:focus, 
+.btn:focus, 
+.hamburger:focus, 
+input:focus, 
+textarea:focus {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px var(--accent-color);
+}
+
